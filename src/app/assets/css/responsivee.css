@@ -1,0 +1,704 @@
+@media only screen and (max-width: 1400px) {
+    .heroTitle h1 {
+      margin-bottom: 6px;
+      font-size: 55px;
+      line-height: 70px;
+    }
+    .heroTitle p {
+      margin-bottom: 20px;
+    }
+    .about-section {
+      height: 100vh;
+    }
+    .about-left .conten {
+      padding: 0 0px !important;
+    }
+    .exp-box2 {
+      top: 170px;
+      width: 45%!important;
+      height: 270px;
+      margin: 20px;
+    }
+    .exp-box {
+      top: 0;
+      width: 45%!important;
+      height: 270px;
+      margin: 0;
+    }
+    .exp-box h2 {
+      font-size: 80px;
+      font-family: var(--secondary-font);
+    }
+    .exp-box p {
+      font-size: 25px;
+    }
+    .exp-box2 h2 {
+      font-size: 80px;
+    }
+    .exp-box2 p {
+      font-size: 25px;
+    }
+    .about-content h2 {
+      font-size: 37px;
+      margin-bottom: 15px;
+    }
+    .about-content p {
+      font-size: 16px;
+    }
+    .specializations-list {
+      width: 100%;
+      display: inline-flex;
+    }
+    .right-side {
+      width: 710px !important;
+    }
+    .left-side {
+      width: 350px;
+      position: sticky;
+      top: 80px;
+    }
+    .Advantage-section {
+      height: auto !important;
+      background-color: var(--black);
+    }
+    .Advantage-handle {
+      width: 90%;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: space-around;
+    }
+    #flexible {
+      display: flex;
+    }
+    .Advantageleft {
+      height: auto;
+      position: relative;
+    }
+    .Advantage-content {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      -ms-transform: translateY(50%);
+      transform: translateY(50%);
+      color: var(--white);
+    }
+    .Advantagerightside {
+      margin-top: 20%;
+      display: grid;
+      width: 100%;
+    }
+    .marue_slide img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 11/5;
+    }
+    .marue_slide2 {
+      text-align: center;
+      padding: 10px;
+      margin: 10px;
+      color: var(--white);
+    }
+    .marue_slide2 h5 {
+      font-size: 16px;
+      font-family: var(--thrd-font);
+    }
+    .marue_slide2 img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      aspect-ratio: 11/5;
+    }
+  }
+  @media only screen and (max-width: 1199px) {
+    .heroTitle h1 {
+      margin-bottom: 6px;
+      font-size: var(--h1);
+      line-height: 70px;
+    }
+    .heroTitle p {
+      margin-bottom: 20px;
+    }
+    .about-section {
+      height: auto;
+    }
+    .about-left .conten {
+      padding: 0 0px !important;
+    }
+    .exp-box2 {
+      top: 20px;
+      width: 100%!important;
+      height: 250px;
+      margin: 0;
+    }
+    .about-content h2 {
+      font-size: 32px;
+      margin-bottom: 25px;
+    }
+    .about-content p {
+      font-size: 16px;
+    }
+    .exp-box {
+      top: 0;
+      width: 100%!important;
+      height: 250px;
+      margin: 0;
+    }
+    .exp-box h2 {
+      font-size: 80px;
+      font-family: var(--secondary-font);
+    }
+    .exp-box p {
+      font-size: 20px;
+    }
+    .exp-box2 h2 {
+      font-size: 80px;
+    }
+    .exp-box2 p {
+      font-size: 20px;
+    }
+    .specializations-list {
+      width: 100%;
+      display: inline-flex;
+    }
+    .right-side {
+      width: 550px !important;
+    }
+    .left-side {
+      width: 350px;
+      position: sticky;
+      top: 80px;
+    }
+    .Advantage-section {
+      height: auto !important;
+      background-color: var(--black);
+    }
+    .Advantage-handle {
+      width: 90%;
+      margin: 0 auto;
+    }
+    #flexible {
+      display: flex;
+    }
+    .Advantageleft {
+      height: auto;
+    }
+    .Advantage-content {
+      margin: 0;
+      position: relative;
+      top: 0%;
+      -ms-transform: translateY(0%);
+      transform: translateY(0%);
+      color: var(--white);
+    }
+    .Advantagerightside {
+      margin-top: 20%;
+      display: grid;
+      width: 100%;
+    }
+    .marue_slide img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 18/5;
+    }
+    .marue_slide2 {
+      text-align: center;
+      padding: 10px;
+      margin: 10px;
+      color: var(--white);
+    }
+    .marue_slide2 h5 {
+      font-size: 16px;
+      font-family: var(--thrd-font);
+    }
+    .marue_slide2 img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      aspect-ratio: 18/5;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .heroTitle h1 {
+      margin-bottom: 6px;
+      font-size: 48px;
+      line-height: 59px;
+    }
+    .heroTitle p {
+      margin-bottom: 18px;
+    }
+    .banner {
+      margin-top: 50px;
+    }
+    .about-section {
+      height: auto;
+    }
+    .about-left .conten {
+      padding: 0 0px !important;
+    }
+    .exp-box2 {
+      top: 20px;
+      width: 100%!important;
+      height: 250px;
+      margin: 0;
+    }
+    .about-content h2 {
+      margin-bottom: 10px;
+      line-height: 40px;
+      font-size: 30px;
+    }
+    .about-content p {
+      font-size: 16px;
+    }
+    .exp-box {
+      top: 0;
+      width: 100%!important;
+      height: 250px;
+      margin: 0;
+    }
+    .exp-box h2 {
+      font-size: 80px;
+      font-family: var(--secondary-font);
+    }
+    .exp-box p {
+      font-size: 20px;
+    }
+    .exp-box2 h2 {
+      font-size: 80px;
+    }
+    .exp-box2 p {
+      font-size: 20px;
+    }
+    .about-content h2 {
+      font-size: 29px;
+      line-height: 37px;
+    }
+    .specializations-list {
+      width: 100%;
+      display: inline-flex;
+    }
+    .right-side {
+      width: 500px !important;
+    }
+    .left-side {
+      width: 350px;
+      position: sticky;
+      top: 80px;
+    }
+    .Advantage-section {
+      height: auto !important;
+      background-color: var(--black);
+    }
+    .Advantage-handle {
+      width: 90%;
+      margin: 0 auto;
+    }
+    #flexible {
+      display: flex;
+    }
+    .Advantageleft {
+      height: auto;
+    }
+    .Advantage-content {
+      margin: 0;
+      position: relative;
+      top: 0%;
+      -ms-transform: translateY(0%);
+      transform: translateY(0%);
+      color: var(--white);
+    }
+    .Advantagerightside {
+      margin-top: 20%;
+      display: grid;
+      width: 100%;
+    }
+    .marue_slide img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 18/5;
+    }
+    .marue_slide2 {
+      text-align: center;
+      padding: 10px;
+      margin: 10px;
+      color: var(--white);
+    }
+    .marue_slide2 h5 {
+      font-size: 16px;
+      font-family: var(--thrd-font);
+    }
+    .marue_slide2 img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      aspect-ratio: 18/5;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    .hero-section {
+      height: auto;
+    }
+    .heroTitle h1 {
+      margin-bottom: 6px;
+      font-size: 33px;
+      line-height: 40px;
+    }
+    .heroTitle p {
+      margin-bottom: 18px;
+    }
+    .banner {
+      margin-top: 50px;
+    }
+    .hero-handler {
+      display: grid;
+      padding-top: 20%;
+    }
+    .about-section {
+      height: auto;
+    }
+    .about-left .conten {
+      padding: 30px 0px !important;
+    }
+    .exp-box2 {
+      top: 20px;
+      width: 46%;
+      margin: 10px;
+    }
+    .exp-box {
+      top: 0;
+      width: 46%;
+      margin: 10px;
+    }
+    .about-content h2 {
+      font-size: 50px;
+      line-height: 70px;
+    }
+    .about-section {
+      background-image: none;
+    }
+    .specializations-list {
+      width: 100%;
+      display: inline-flex;
+    }
+    .right-side {
+      width: 380px !important;
+    }
+    .left-side {
+      width: 290px;
+      position: sticky;
+      top: 80px;
+    }
+    .Advantage-section {
+      height: auto !important;
+      background-color: var(--black);
+    }
+    .Advantage-handle {
+      width: 90%;
+      margin: 0 auto;
+    }
+    #flexible {
+      display: flex;
+    }
+    .Advantageleft {
+      height: auto;
+    }
+    .Advantage-content {
+      margin: 0;
+      position: relative;
+      top: 0%;
+      -ms-transform: translateY(0%);
+      transform: translateY(0%);
+      color: var(--white);
+    }
+    .Advantagerightside {
+      margin-top: 20%;
+      display: grid;
+      width: 100%;
+    }
+    .marue_slide img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 18/5;
+    }
+    .marue_slide2 {
+      text-align: center;
+      padding: 10px;
+      margin: 10px;
+      color: var(--white);
+    }
+    .marue_slide2 h5 {
+      font-size: 16px;
+      font-family: var(--thrd-font);
+    }
+    .marue_slide2 img {
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      aspect-ratio: 18/5;
+    }
+    .specializations-list .card .text-title {
+      font-size: 18px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .hero-section {
+      height: auto;
+      position: static;
+    }
+    .projects-data {
+      padding-left: 20px;
+    }
+    .heroTitle h1 {
+      margin-bottom: 6px;
+      font-size: 47px;
+      line-height: 70px;
+    }
+    .heroTitle p {
+      margin-bottom: 24px;
+    }
+    .banner {
+      margin-top: 50px;
+    }
+    .hero-handler {
+      display: grid;
+    }
+    .hero-handler {
+      display: grid;
+      padding-top: 20%;
+    }
+    .about-section {
+      height: auto !important;
+    }
+    .about-left .conten {
+      padding: 30px 0px !important;
+    }
+    .exp-box2 {
+      top: 20px;
+      width: 46%;
+      margin: 10px;
+    }
+    .exp-box {
+      top: 0;
+      width: 46%;
+      margin: 10px;
+    }
+    .about-content h2 {
+      font-size: 40px;
+      line-height: 70px;
+    }
+    .about-section {
+      background-image: none;
+    }
+    .services-section {
+      height: auto;
+      background-color: var(--black);
+    }
+    .card {
+      margin: 30px 0;
+    }
+    .specializations-list {
+      width: 100%;
+      display: inline-grid;
+    }
+    .left-side {
+      width: 280px;
+      position: sticky;
+      top: 80px;
+    }
+    .right-side {
+      width: 350px !important;
+    }
+    .experiance-list .experiance-timeline .item {
+      padding-left: 20px;
+    }
+    .specializations-list {
+      width: 100%;
+      display: inline-grid;
+    }
+    .left-side {
+      width: 100%;
+      position: relative;
+      top: 0;
+    }
+    .right-side {
+      width: 100% !important;
+      padding-top: 20px;
+    }
+    a .card {
+      height: auto;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .hero-section {
+      height: auto;
+    }
+    .projects-data {
+      padding-left: 0;
+    }
+    .float {
+      display: block;
+    }
+    .cv-holder {
+      display: inline-grid;
+    }
+    #herosocial {
+      padding-top: 10px;
+    }
+    .heroTitle h1 {
+      margin-bottom: 6px;
+      font-size: 41px;
+      line-height: 70px;
+    }
+    .heroTitle p {
+      margin-bottom: 24px;
+      font-size: 15px;
+    }
+    .banner {
+      margin-top: 50px;
+    }
+    .hero-handler {
+      display: grid;
+      padding-top: 25%;
+    }
+    .about-section {
+      height: auto !important;
+    }
+    .about-left .conten {
+      padding: 0px !important;
+    }
+    .exp-box2 {
+      top: 0;
+      width: 100%;
+      margin: 20px 0;
+    }
+    .about-section {
+      background-image: none;
+    }
+    .exp-box {
+      top: 0;
+      width: 100%;
+      margin: 20px 0;
+    }
+    .about-section {
+      background-image: none;
+    }
+    .about-content h2 {
+      font-size: 33px;
+      line-height: 58px;
+    }
+    .services-section {
+      height: auto;
+      background-image: none;
+    }
+    .specializations-list {
+      width: 100%;
+      display: inline-grid;
+    }
+    .left-side {
+      width: 100%;
+      position: relative;
+      top: 0;
+    }
+    .right-side {
+      width: 100% !important;
+      padding-top: 20px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .hero-section {
+      height: auto;
+    }
+    .grid figure {
+      height: auto;
+    }
+    .heroTitle h1 {
+      margin-bottom: 6px;
+      font-size: 37px;
+      line-height: 57px;
+    }
+    .heroTitle p {
+      margin-bottom: 24px;
+      font-size: 14px;
+    }
+    .banner {
+      margin-top: 50px;
+    }
+    .hero-handler {
+      display: grid;
+      padding-top: 25%;
+    }
+    .specializations-list {
+      width: 100%;
+      display: inline-grid;
+    }
+    .logo {
+      padding: 0;
+    }
+    .icon-bar {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 370px) {
+    .mobile {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 340px) {
+    .hero-section {
+      height: auto;
+    }
+    .heroTitle h1 {
+      margin-bottom: 6px;
+      font-size: 28px;
+      line-height: 41px;
+    }
+    .heroTitle p {
+      margin-bottom: 18px;
+      font-size: 13px;
+    }
+    .banner {
+      margin-top: 50px;
+    }
+    .hero-handler {
+      display: grid;
+      padding-top: 35%;
+    }
+    .about-section {
+      height: auto !important;
+    }
+    .about-left .conten {
+      padding: 0px !important;
+    }
+    .exp-box2 {
+      top: 0;
+      width: 100%!important;
+      margin: 20px 0;
+    }
+    .exp-box {
+      top: 0;
+      width: 100%!important;
+      margin: 20px 0;
+    }
+    .about-section {
+      background-image: none;
+    }
+    .about-content h2 {
+      font-size: 40px;
+      line-height: 58px;
+    }
+    .mobile {
+      display: none;
+    }
+    .specializations-list {
+      width: 100%;
+      display: inline-grid;
+    }
+  }
+  
