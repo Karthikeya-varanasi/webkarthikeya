@@ -40,6 +40,93 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
+
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    mobile: '',
+    service: '',
+    message: '',
+});
+console.log(formData, "ter")
+
+
+const [isSubmitting, setIsSubmitting] = useState(false);
+const [submitStatus, setSubmitStatus] = useState('');
+const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+        ...prev,
+        [name]: value,
+    }));
+};
+
+// const handleSubmit = async (e) => {
+//     e.preventDefault();
+//     setIsSubmitting(true);
+
+//     try {
+//         const res = await fetch('/api/contact', {
+//             method: 'POST',
+//             headers: {
+//                 'Content-Type': 'application/json',
+//             },
+//             body: JSON.stringify(formData),  // Ensure formData is properly passed
+//         });
+
+//         const result = await res.json();
+//         console.log(result, "tr");
+
+//         if (res.ok) {
+//             setSubmitStatus('Message sent successfully!');
+//         } else {
+//             setSubmitStatus('Failed to send message.');
+//         }
+//     } catch (error) {
+//         setSubmitStatus('An error occurred.');
+//     } finally {
+//         setIsSubmitting(false);
+//     }
+// };
+
+const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    // const formData = {
+    //     name: "John Doe",
+    //     email: "john@example.com",
+    //     mobile: "1234567890",
+    //     service: "Consultation",
+    //     message: "I would like to know more.",
+    // };
+
+    try {
+        const res = await fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(formData),
+        });
+
+        const data = await res.json();
+        console.log(data,"data")
+
+        if (res.ok) {
+            setSubmitStatus('Message sent successfully!');
+        } else {
+            setSubmitStatus(data.error || 'Failed to send message.');
+        }
+    } catch (error) {
+        setSubmitStatus('An error occurred.');
+    } finally {
+        setIsSubmitting(false);
+    }
+};
+
+
   return (
     <>
       <header
@@ -71,6 +158,7 @@ export default function Header() {
                   <a
                     href="#home"
                     className="nav-links"
+                    title="Home"
                     onClick={handleNavLinkClick}
                   >
                     Home
@@ -80,6 +168,7 @@ export default function Header() {
                   <a
                     href="#about"
                     className="nav-links"
+                    title="About"
                     onClick={handleNavLinkClick}
                   >
                     About
@@ -89,6 +178,7 @@ export default function Header() {
                   <a
                     href="#services"
                     className="nav-links"
+                    title="Service"
                     onClick={handleNavLinkClick}
                   >
                     Services
@@ -98,6 +188,7 @@ export default function Header() {
                   <a
                     href="#resume"
                     className="nav-links"
+                    title="Resume"
                     onClick={handleNavLinkClick}
                   >
                     Resume
@@ -107,6 +198,7 @@ export default function Header() {
                   <a
                     href="#skills"
                     className="nav-links"
+                    title="Skills"
                     onClick={handleNavLinkClick}
                   >
                     Skills
@@ -118,6 +210,7 @@ export default function Header() {
                 <button
                   className="button"
                   data-bs-toggle="modal"
+                  title="Hire Me"
                   data-bs-target="#exampleModal"
                 >
                   Hire Me!
@@ -147,55 +240,88 @@ export default function Header() {
                 <i className="fa-solid fa-xmark"></i>
               </button>
             </div>
-            <form action="includes/action.php" method="post" className="form">
-              <label>
-                <input
-                  className="input"
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder=""
-                  required
-                />
-                <span>Firstname</span>
-              </label>
+            <form onSubmit={handleSubmit} className="form">
+                                    <label>
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            id="name"
+                                            className="input"
+                                            placeholder=""
+                                            value={formData.name}
+                                            onChange={handleChange}
+                                            required
+                                        />
+                                        <span>Firstname</span>
+                                    </label>
 
-              <label>
-                <input
-                  className="input"
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder=""
-                  required
-                />
-                <span>Email</span>
-              </label>
+                                    <label>
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            id="email"
+                                            className="input"
+                                            placeholder=""
+                                            value={formData.email}
+                                            onChange={handleChange}
+                                            required
+                                        />
+                                        <span>Email</span>
+                                    </label>
 
-              <label>
-                <input
-                  className="input"
-                  type="text"
-                  name="mobile"
-                  id="mobile"
-                  placeholder=""
-                />
-                <span>Phone Number</span>
-              </label>
-              <label>
-                <textarea
-                  className="input"
-                  type="text"
-                  name="message"
-                  id="message"
-                  style={{ width: "100%", height: "100px", padding: "10px" }}
-                  placeholder="Enter your Text"
-                ></textarea>
-              </label>
-              <button type="submit" className="submit">
-                Submit
-              </button>
-            </form>
+                                    <label>
+                                        <input
+                                            type="text"
+                                            name="mobile"
+                                            id="mobile"
+                                            className="input"
+                                            placeholder=""
+                                            value={formData.mobile}
+                                            onChange={handleChange}
+                                            required
+                                        />
+                                        <span>Phone Number</span>
+                                    </label>
+
+                                    <label>
+                                        <select
+                                            name="service"
+                                            id="service"
+                                            className="input"
+                                            value={formData.service}
+                                            onChange={handleChange}
+                                            required
+                                        >
+                                            <option value="Website Customize">Website Customize</option>
+                                            <option value="Single Landing Page Design">Single Landing Page Design</option>
+                                            <option value="Design">Design</option>
+                                            <option value="Development">Development</option>
+                                            <option value="Digital Marketing">Digital Marketing</option>
+                                            <option value="Graphic Design">Graphic Design</option>
+                                        </select>
+                                        <span>Service</span>
+                                    </label>
+
+                                    <label>
+                                        <textarea
+                                            name="message"
+                                            id="message"
+                                            cols="30"
+                                            rows="5"
+                                            className="input"
+                                            placeholder="Enter your Text"
+                                            value={formData.message}
+                                            onChange={handleChange}
+                                        ></textarea>
+                                    </label>
+
+
+                                    <button type="submit" className="submit" disabled={isSubmitting}>
+                                        {isSubmitting ? 'Sending...' : 'Submit'}
+                                    </button>
+
+                                    {submitStatus && <p>{submitStatus}</p>}
+                                </form>
           </div>
         </div>
       </div>
