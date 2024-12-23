@@ -1,7 +1,7 @@
 "use client"
 import { useState } from 'react';
 export default function Footer() {
-
+    const currentYear = new Date().getFullYear(); 
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -236,7 +236,7 @@ export default function Footer() {
                 <i className="fa-brands fa-whatsapp"></i>
             </a>
             <div className="copy-writer">
-                <span>© Copyright 2025 by <a href="#" title="Karthikeya Varanasi">Karthikeya Varanasi</a> </span>
+                <span> © Copyright {currentYear} Designed & Developed By <a href="#" title="Karthikeya Varanasi">Karthikeya Varanasi</a> </span>
             </div>
         </>
 
