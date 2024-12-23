@@ -70,8 +70,8 @@ export async function POST(req) {
     const transporter = nodemailer.createTransport({
       service: 'gmail', // Use your email provider
       auth: {
-        user: "karthikvaranasi07@gmail.com", // Use environment variables for security
-         pass: "txxdldbtmzjidivm",
+        user: "contact.webkarthikeya@gmail.com", // Use environment variables for security
+         pass: "atjwdpdozbkeqfzt",
       },
     });
 
@@ -94,7 +94,7 @@ export async function POST(req) {
 
     const notificationMailOptions = {
       from: email, // User's email (sender)
-      to: 'karthikvaranasi07@gmail.com', // Your email (recipient)
+      to: 'contact.webkarthikeya@gmail.com', // Your email (recipient)
       subject: `New Contact Form Submission: ${service}`,
       text: `
         Name: ${name}
@@ -120,10 +120,10 @@ export async function POST(req) {
         ${message}
         -------------------------
 
-        If you need immediate assistance, feel free to contact us at xyz@gmail.com.
+        If you need immediate assistance, feel free to contact us at contact.webkarthikeya@gmail.com .
 
         Best regards,
-        Your Company Name
+        Karthikeya Varanasi
       `,
     };
 

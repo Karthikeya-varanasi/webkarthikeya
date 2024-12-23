@@ -112,7 +112,7 @@ export default function Footer() {
                                         </div>
                                         <div className="contactmail">
                                             <h3>Contact :</h3>
-                                            <a href="mailto:contact@webkarthikeya.com">contact@webkarthikeya.com</a>
+                                            <a href="mailto:contact.webkarthikeya@gmail.com">contact.webkarthikeya@gmail.com</a>
                                         </div>
 
                                         <div className="experiance-details">
@@ -120,7 +120,7 @@ export default function Footer() {
                                             <h3>Follow us :</h3>
                                             <div className="experiance_title">
                                                 <ul>
-                                                    <li ><a href="mailto:contact@webkarthikeya.com" title="Mail"><i className="fa-solid fa-envelope"></i></a></li>
+                                                    <li ><a href="mailto:contact.webkarthikeya@gmail.com" title="Mail"><i className="fa-solid fa-envelope"></i></a></li>
                                                     <li ><a href="https://www.instagram.com/karthikeyavaranasi07?igsh=emk0bzh0ZnNmNWdq" title="instageam" target="_blank"><i className="fa-brands fa-instagram"></i></a></li>
                                                     <li ><a href="https://www.linkedin.com/in/karthikeya-varanasi-2187a2210/" title="Linked in" target="_blank"><i className="fa-brands fa-linkedin"></i></a></li>
                                                     <li ><a href="https://wa.link/w5d4mp" title="whats app"> <i className="fa-brands fa-whatsapp"></i></a></li>
@@ -224,7 +224,7 @@ export default function Footer() {
 
 
             <div className="icon-bar">
-                <a href="mailto:contact@webkarthikeya.com" className="facebook" title="Mail"><i className="fa-solid fa-envelope"></i></a>
+                <a href="mailto:contact.webkarthikeya@gmail.com" className="facebook" title="Mail"><i className="fa-solid fa-envelope"></i></a>
 
                 <a href="https://www.instagram.com/karthikeyavaranasi07?igsh=emk0bzh0ZnNmNWdq" className="twitter" title="instageam" target="_blank"><i className="fa-brands fa-instagram"></i></a>
 
@@ -238,6 +238,8 @@ export default function Footer() {
             <div className="copy-writer">
                 <span> © Copyright {currentYear} Designed & Developed By <a href="#" title="Karthikeya Varanasi">Karthikeya Varanasi</a> </span>
             </div>
+
+
         </>
 
     );

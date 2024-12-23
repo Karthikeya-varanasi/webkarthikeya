@@ -52,7 +52,7 @@ export default function Homecomponent() {
 
                     <div className="experiance_title" data-scroll data-scroll-speed="-5" data-scroll-direction="horizontal" style={{padding: '0px',}}>
                                     <ul>
-                                        <li style={{padding: '0px 10px',}}><a href="mailto:contact@webkarthikeya.com" title="Mail"><i className="fa-solid fa-envelope"></i></a></li>
+                                        <li style={{padding: '0px 10px',}}><a href="mailto:contact.webkarthikeya@gmail.com" title="Mail"><i className="fa-solid fa-envelope"></i></a></li>
                                         <li style={{padding: '0px 10px',}}><a href="https://www.instagram.com/karthikeyavaranasi07?igsh=emk0bzh0ZnNmNWdq" title="Instagram" target="_blank"><i className="fa-brands fa-instagram"></i></a></li>
                                         <li style={{padding: '0px 10px',}}><a href="https://www.linkedin.com/in/karthikeya-varanasi-2187a2210/" title="Linked in" target="_blank"><i className="fa-brands fa-linkedin"></i></a></li>
                                         <li style={{padding: '0px 10px',}}><a href="https://wa.link/w5d4mp" title="whats app"> <i className="fa-brands fa-whatsapp"></i></a></li>
