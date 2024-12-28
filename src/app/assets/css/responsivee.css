@@ -450,7 +450,7 @@
   @media only screen and (max-width: 768px) {
     .hero-section {
       height: auto;
-      position: static;
+      /* position: static; */
     }
     .projects-data {
       padding-left: 20px;
@@ -538,6 +538,24 @@
   @media only screen and (max-width: 600px) {
     .hero-section {
       height: auto;
+    }
+
+
+    .inner{
+      --w: 86px;
+      --h: 220px;
+      --translateZ: calc((var(--w) + var(--h)) / 1.8);
+      --rotateX: -24deg;
+      --perspective: 1000px;
+      position: absolute;
+      width: var(--w);
+      height: var(--h);
+      top: 30%;
+      left: calc(50% -(var(--w) / 2));
+      z-index: 2;
+      transform-style: preserve-3d;
+      transform: perspective(var(--perspective));
+      animation: rotating 20s linear infinite;
     }
     .projects-data {
       padding-left: 0;

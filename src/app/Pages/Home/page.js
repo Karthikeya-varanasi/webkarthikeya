@@ -1,5 +1,6 @@
 "use client"
-import { useEffect,  useState } from 'react';
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import '../../../../node_modules/swiper/swiper-bundle.min.css';
@@ -12,33 +13,58 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 export default function Homecomponent() {
 
+
+  const [SwiperModule, setSwiperModule] = useState(null);
+
+  useEffect(() => {
+    import('swiper').then((SwiperModule) => {
+      setSwiperModule(SwiperModule);
+    });
+
+    AOS.init({
+      duration: 1000,
+      easing: "ease-out-back",
+      once: true,
+    });
+  }, []);
+
+  if (!SwiperModule) return null;
+
+
+
+  const cards = [
+    { index: 0, color: "142, 249, 252", imageSrc: "/img/Banner/skills/figma.svg" },
+    { index: 1, color: "142, 252, 204", imageSrc: "/img/Banner/skills/illustrator.svg" },
     
-      const [SwiperModule, setSwiperModule] = useState(null);
+    { index: 2, color: "142, 249, 252", imageSrc: "/img/Banner/skills/Photoshop.svg" },
+    { index: 3, color: "142, 252, 204", imageSrc: "/img/Banner/skills/react_img.svg" },
+    { index: 4, color: "142, 249, 252", imageSrc: "/img/Banner/skills/java.svg" },
+    { index: 5, color: "142, 252, 204", imageSrc: "/img/Banner/skills/Bootstrap.svg" },
     
-      useEffect(() => {
-        import('swiper').then((SwiperModule) => {
-          setSwiperModule(SwiperModule);
-        });
+    { index: 6, color: "142, 252, 204", imageSrc: "/img/Banner/skills/wordpress.svg" },
     
-        AOS.init({
-          duration: 1000,
-          easing: "ease-out-back", 
-          once: true, 
-        });
-      }, []);
+    { index: 7, color: "142, 252, 204", imageSrc: "/img/Banner/skills/php_img.svg" },
     
-    if (!SwiperModule) return null; 
+    { index: 8, color: "142, 252, 204", imageSrc: "/img/Banner/skills/skel_img.svg" },
     
+    { index: 9, color: "142, 252, 204", imageSrc: "/img/Banner/skills/cs_s.svg" },
     
-    return (
-        <>
-        
+    { index: 10, color: "142, 252, 204", imageSrc: "/img/Banner/skills/mongodb.svg" },
+    
+    { index: 11, color: "142, 252, 204", imageSrc: "/img/Banner/skills/nextjs.svg" },
+  ];
+
+  return (
+    <>
+
       <section className="hero-section" id="home">
         <div className='container'>
           <div className='hero-handler ' >
             <div className='col-xl-7 col-lg-7 col-xs-12' >
               <div className="heroTitle" data-aos="fade-up" data-aos-duration="2000">
                 <h1>Hi from <br /><span>Karthikeya Varanasi,</span>  Web Designer & Developer</h1>
+                
+                {/* <h1>Hi from <br /><span>K</span>arthikeya <span>V</span>aranasi  Web Designer & Developer</h1> */}
                 <p >I design and code beautifully simple things and i love what i do.</p>
                 <div className="cv-holder">
                   <a href=""  >
@@ -50,15 +76,15 @@ export default function Homecomponent() {
                   </a>
                   <div className="experiance-details" id="herosocial">
 
-                    <div className="experiance_title" data-scroll data-scroll-speed="-5" data-scroll-direction="horizontal" style={{padding: '0px',}}>
-                                    <ul>
-                                        <li style={{padding: '0px 10px',}}><a href="mailto:contact.webkarthikeya@gmail.com" title="Mail"><i className="fa-solid fa-envelope"></i></a></li>
-                                        <li style={{padding: '0px 10px',}}><a href="https://www.instagram.com/karthikeyavaranasi07?igsh=emk0bzh0ZnNmNWdq" title="Instagram" target="_blank"><i className="fa-brands fa-instagram"></i></a></li>
-                                        <li style={{padding: '0px 10px',}}><a href="https://www.linkedin.com/in/karthikeya-varanasi-2187a2210/" title="Linked in" target="_blank"><i className="fa-brands fa-linkedin"></i></a></li>
-                                        <li style={{padding: '0px 10px',}}><a href="https://wa.link/w5d4mp" title="whats app"> <i className="fa-brands fa-whatsapp"></i></a></li>
-                                    </ul>
-                                
-                                </div>
+                    <div className="experiance_title" data-scroll data-scroll-speed="-5" data-scroll-direction="horizontal" style={{ padding: '0px', }}>
+                      <ul>
+                        <li style={{ padding: '0px 10px', }}><a href="mailto:contact.webkarthikeya@gmail.com" title="Mail"><i className="fa-solid fa-envelope"></i></a></li>
+                        <li style={{ padding: '0px 10px', }}><a href="https://www.instagram.com/karthikeyavaranasi07?igsh=emk0bzh0ZnNmNWdq" title="Instagram" target="_blank"><i className="fa-brands fa-instagram"></i></a></li>
+                        <li style={{ padding: '0px 10px', }}><a href="https://www.linkedin.com/in/karthikeya-varanasi-2187a2210/" title="Linked in" target="_blank"><i className="fa-brands fa-linkedin"></i></a></li>
+                        <li style={{ padding: '0px 10px', }}><a href="https://wa.link/w5d4mp" title="whats app"> <i className="fa-brands fa-whatsapp"></i></a></li>
+                      </ul>
+
+                    </div>
                   </div>
 
                 </div>
@@ -77,7 +103,7 @@ export default function Homecomponent() {
         </div>
       </section>
 
-      
+
       <section className="about-section  default-style" id="about">
         <div className='container'>
           <div className='row'>
@@ -104,7 +130,7 @@ export default function Homecomponent() {
                   <h2>Every great design Begin with an even <span>Better Story</span></h2>
                   <p>Creative and efficient design professional with over Three plus years of experience in corporate design and branding. Maintained company website and designed developed industrial standard technology. Optimized the smooth user-friendly navigation flow with related operations. Promoted and designed company product write-ups, advertising visuals, Signage, company literature. Passionate about building world className web applications. Company Knowledgebase customer support subdomain website received 2020 and 2023 customers for Best Navigation and Structure. Hard-working web designer & developer with a flair for creating elegant solutions in the least amount of time. Developed an ecommerce website, customer web portal, documentary launch website, and donations website for a local charity.</p>
 
-                  
+
                 </div>
               </div>
             </div>
@@ -181,7 +207,7 @@ export default function Homecomponent() {
                     <li><a href="https://wa.link/w5d4mp" title="whats app"> <i className="fa-brands fa-whatsapp"></i></a></li>
                   </ul>
                   <h4> Name: Karthikeya Varanasi</h4>
-                  <div className="hero-btn" style={{display:'inline-flex', justifycontent:'center'}}>
+                  <div className="hero-btn" style={{ display: 'inline-flex', justifycontent: 'center' }}>
                     <button className="button" data-bs-toggle="modal" data-bs-target="#exampleModal" title="Hire Me">
                       Hire Me!
                       {/* <svg fill="currentColor" viewBox="0 0 24 24" className="icon">
@@ -271,7 +297,7 @@ export default function Homecomponent() {
               </div>
             </div>
             <div className='col-xl-6 col-lg-6 col-md-6 col-xs-12'>
-              <div className="Advantagerightside">
+              {/* <div className="Advantagerightside">
                 <marquee behavior="scroll" direction="left" className="marquee-size">
                   <img src="/img/Banner/skills/figma.svg" alt="Figma" />
 
@@ -298,6 +324,43 @@ export default function Homecomponent() {
 
 
                 </marquee>
+              </div> */}
+
+
+
+              <div className="sr-skills">
+                <div className="container">
+                  <div className="wrapper">
+                    <div className="inner" style={{ "--quantity": cards.length }}>
+                      {cards.map((card) => (
+                        <div
+                          key={card.index}
+                          className="card"
+                          style={{
+                            "--index": card.index,
+                            "--color-card": card.color,
+                          }}
+                        >
+                          <div className="img">
+                            <Image
+                              src={card.imageSrc}
+                              alt="{Card ${card.index}}"
+                            width={150}
+                            height={150}
+                            style={{ borderRadius: "10px", display: "flex",
+                                  alignItems: "center", height:"100%", width:"70%", margin:"0 auto" }}
+                  />
+                          </div>
+                        </div>
+                      ))}
+
+
+
+                    </div>
+
+
+                  </div>
+                </div>
               </div>
 
             </div>
@@ -322,119 +385,119 @@ export default function Homecomponent() {
             </div>
           </div>
           <section className="projects-data" id="projects">
-        <div className="swiper Projects" data-aos="fade-up">
-          <div className="swiper-wrapper">
-            <Swiper
-              spaceBetween={30}
-              slidesPerView={1}
-              loop={true}
-              modules={[Autoplay]}
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-              }}
-              breakpoints={{
-                640: {
-                  slidesPerView: 2,
-                },
-                768: {
-                  slidesPerView: 3,
-                },
-                1024: {
-                  slidesPerView: 3,
-                },
-              }}
-             
-            >
-              <SwiperSlide>
-                <div className="content">
-                  <div className="grid">
-                    <figure className="effect-lily">
-                      <img src="/img/projects/07.svg" alt="Megatron" />
-                      <figcaption>
-                        <div>
-                          <h2>Megatron <span></span></h2>
-                          <p>Lily likes to play with crayons and pencils</p>
-                        </div>
-                        <a href="https://megatronindia.in/" title="Megatron" target="_blank">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="content">
-                  <div className="grid">
-                    <figure className="effect-lily">
-                      <img src="/img/projects/08.svg" alt="Krishnas Kitchen" />
-                      <figcaption>
-                        <div>
-                          <h2>Krishnas Kitchen Menu <span></span></h2>
-                          <p>Lily likes to play with crayons and pencils</p>
-                        </div>
-                        <a href="https://krishnaskitchen.co.in/" title="Krishnas Kitchen Menu" target="_blank">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="content">
-                  <div className="grid">
-                    <figure className="effect-lily">
-                      <img src="/img/projects/05.svg" alt="The Vue Residencies" />
-                      <figcaption>
-                        <div>
-                          <h2>The Vue Residencies <span></span></h2>
-                          <p>Lily likes to play with crayons and pencils</p>
-                        </div>
-                        <a href="https://www.thevueresidences.in/" title="The Vue Residencies" target="_blank">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="content">
-                  <div className="grid">
-                    <figure className="effect-lily">
-                      <img src="/img/projects/02.svg" alt="Celequa" />
-                      <figcaption>
-                        <div>
-                          <h2>Celequa Technologies <span></span></h2>
-                          <p>Lily likes to play with crayons and pencils</p>
-                        </div>
-                        <a href="https://celequa.com/" title="Celequa Tech" target="_blank">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="content">
-                  <div className="grid">
-                    <figure className="effect-lily">
-                      <img src="/img/projects/11.svg" alt="Eeshanya" />
-                      <figcaption>
-                        <div>
-                          <h2>Eeshanya <span></span></h2>
-                          <p>Lily likes to play with crayons and pencils</p>
-                        </div>
-                        <a href="https://eeshanya.com/" title="Eeshanya" target="_blank">View more</a>
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
-              </SwiperSlide>
-            </Swiper>
-          </div>
+            <div className="swiper Projects" data-aos="fade-up">
+              <div className="swiper-wrapper">
+                <Swiper
+                  spaceBetween={30}
+                  slidesPerView={1}
+                  loop={true}
+                  modules={[Autoplay]}
+                  autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                  }}
+                  breakpoints={{
+                    640: {
+                      slidesPerView: 2,
+                    },
+                    768: {
+                      slidesPerView: 3,
+                    },
+                    1024: {
+                      slidesPerView: 3,
+                    },
+                  }}
+
+                >
+                  <SwiperSlide>
+                    <div className="content">
+                      <div className="grid">
+                        <figure className="effect-lily">
+                          <img src="/img/projects/07.svg" alt="Megatron" />
+                          <figcaption>
+                            <div>
+                              <h2>Megatron <span></span></h2>
+                              <p>Lily likes to play with crayons and pencils</p>
+                            </div>
+                            <a href="https://megatronindia.in/" title="Megatron" target="_blank">View more</a>
+                          </figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="content">
+                      <div className="grid">
+                        <figure className="effect-lily">
+                          <img src="/img/projects/08.svg" alt="Krishnas Kitchen" />
+                          <figcaption>
+                            <div>
+                              <h2>Krishnas Kitchen Menu <span></span></h2>
+                              <p>Lily likes to play with crayons and pencils</p>
+                            </div>
+                            <a href="https://krishnaskitchen.co.in/" title="Krishnas Kitchen Menu" target="_blank">View more</a>
+                          </figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="content">
+                      <div className="grid">
+                        <figure className="effect-lily">
+                          <img src="/img/projects/05.svg" alt="The Vue Residencies" />
+                          <figcaption>
+                            <div>
+                              <h2>The Vue Residencies <span></span></h2>
+                              <p>Lily likes to play with crayons and pencils</p>
+                            </div>
+                            <a href="https://www.thevueresidences.in/" title="The Vue Residencies" target="_blank">View more</a>
+                          </figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="content">
+                      <div className="grid">
+                        <figure className="effect-lily">
+                          <img src="/img/projects/02.svg" alt="Celequa" />
+                          <figcaption>
+                            <div>
+                              <h2>Celequa Technologies <span></span></h2>
+                              <p>Lily likes to play with crayons and pencils</p>
+                            </div>
+                            <a href="https://celequa.com/" title="Celequa Tech" target="_blank">View more</a>
+                          </figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="content">
+                      <div className="grid">
+                        <figure className="effect-lily">
+                          <img src="/img/projects/11.svg" alt="Eeshanya" />
+                          <figcaption>
+                            <div>
+                              <h2>Eeshanya <span></span></h2>
+                              <p>Lily likes to play with crayons and pencils</p>
+                            </div>
+                            <a href="https://eeshanya.com/" title="Eeshanya" target="_blank">View more</a>
+                          </figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                </Swiper>
+              </div>
+            </div>
+          </section>
+
         </div>
-      </section>
-       
-          </div>
       </div>
 
-        </>
-    );
+    </>
+  );
 
 }

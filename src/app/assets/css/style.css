@@ -35,7 +35,8 @@ a {
 }
 :root {
   --primary-color: #232f5d;
-  --secondary-color: #0c79be;
+  /* --secondary-color: #0c79be; */
+  --secondary-color: #8dab0a;
   --thrd-color: #ffffff;
   --black: #000!important;
   --white: #fff;
@@ -43,7 +44,8 @@ a {
   --text-primary-color: #ffffff;
   --text-second-color: #444444;
   --text: #c6c6c6;
-  --back-ground-primary-color: #232f5d;
+  /* --back-ground-primary-color: #232f5d; */
+  --back-ground-primary-color: #8dab0a;
   --back-ground-third-color: #000;
   --primary-fonts: "Syne", Sans-serif;
   --secondary-font: "Plus Jakarta Sans", sans-serif;
@@ -589,4 +591,73 @@ figure.effect-lily:hover p {
 }
 .projects-data {
   padding-left: 50px;
+}
+
+
+
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 65vh;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.inner {
+  --w: 136px; /* Width of each card */
+  --h: 172px; /* Height of each card */
+  --translateZ: calc((var(--w) + var(--h)) / 1.1); /* Adjust the depth of cards */
+  --rotateX: -11deg;
+  --perspective: 1000px;
+  position: absolute;
+  width: var(--w);
+  height: var(--h);
+  top: 30%;
+  left: calc(50% - (var(--w) / 2));
+  z-index: 2;
+  transform-style: preserve-3d;
+  transform: perspective(var(--perspective));
+  animation: rotating 20s linear infinite;
+}
+
+@keyframes rotating {
+  from {
+    transform: perspective(var(--perspective)) rotateX(var(--rotateX)) rotateY(0);
+  }
+  to {
+    transform: perspective(var(--perspective)) rotateX(var(--rotateX)) rotateY(1turn);
+  }
+}
+
+.wrapper .card:hover{
+  
+  background-image: radial-gradient(circle, var(--secondary-color)5%, var(--black)70%)!important;
+}
+.wrapper .card {
+  position: absolute!important;
+  border: 2px solid rgba(var(--color-card), 1);
+  border-radius: 12px;
+  
+  background-image: radial-gradient(circle, #ffffff5f, var(--black)70%)!important;
+  overflow: hidden;
+  inset: 0;
+  transform: rotateY(calc((360deg / var(--quantity)) * var(--index)))
+    translateZ(var(--translateZ));
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: radial-gradient(
+    circle,
+    rgba(var(--color-card), 0.2) 0%,
+    rgba(var(--color-card), 0.6) 80%,
+    rgba(var(--color-card), 0.9) 100%,
+  );
 }

@@ -25,12 +25,13 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-  <Head>
+      <Head>
         {/* SEO Meta Tags */}
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
         <meta name="author" content="Karthikeya Varanasi" />
 
+        <link rel="icon" type="image/png"  href="../../public/img/faviicon.png" />
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="app" />
         <meta name="twitter:site" content="@Karthikeya Varanasi" />
