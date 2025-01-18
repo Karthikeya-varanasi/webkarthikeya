@@ -128,7 +128,7 @@ export default function Homecomponent() {
               <div className="aboutright" data-aos="fade">
                 <div className="about-content">
                   <h2>Every great design Begin with an even <span>Better Story</span></h2>
-                  <p>Creative and efficient design professional with over Three plus years of experience in corporate design and branding. Maintained company website and designed developed industrial standard technology. Optimized the smooth user-friendly navigation flow with related operations. Promoted and designed company product write-ups, advertising visuals, Signage, company literature. Passionate about building world className web applications. Company Knowledgebase customer support subdomain website received 2020 and 2023 customers for Best Navigation and Structure. Hard-working web designer & developer with a flair for creating elegant solutions in the least amount of time. Developed an ecommerce website, customer web portal, documentary launch website, and donations website for a local charity.</p>
+                  <p>Welcome to the portfolio of Karthikeya Varanasi, a creative and efficient design professional with over Three plus years of experience in corporate design and branding. Maintained company website and designed developed industrial standard technology. Optimized the smooth user-friendly navigation flow with related operations. Promoted and designed company product write-ups, advertising visuals, Signage, company literature. Passionate about building world className web applications. Company Knowledgebase customer support subdomain website received 2020 and 2023 customers for Best Navigation and Structure. Hard-working web designer & developer with a flair for creating elegant solutions in the least amount of time. Developed an ecommerce website, customer web portal, documentary launch website, and donations website for a local charity.</p>
 
 
                 </div>
@@ -159,7 +159,7 @@ export default function Homecomponent() {
               <div className="card">
                 <div className="card-details">
                   <p className="text-title">Website Design & Development</p>
-                  <p className="text-bodyy">I build website go live with Html, Css, Javascript Bootstrap, WordPress</p>
+                  <p className="text-bodyy">I specialize in designing and developing websites using HTML, CSS, JavaScript, Bootstrap, and WordPress to bring ideas to life and deliver live, functional solutions.</p>
                 </div>
                 <button className="card-button">More info</button>
               </div>
@@ -170,8 +170,8 @@ export default function Homecomponent() {
             <a href="" data-aos="fade-up" data-aos-duration="3500">
               <div className="card">
                 <div className="card-details">
-                  <p className="text-title">Digital <br /> Marketing</p>
-                  <p className="text-bodyy">I build website go live with Html, Css, Javascript Bootstrap, WordPress</p>
+                  <p className="text-title">Digital Marketing</p>
+                  <p className="text-bodyy">I create and launch websites using HTML, CSS, JavaScript, Bootstrap, and WordPress, seamlessly integrating them with effective digital marketing strategies.</p>
                 </div>
                 <button className="card-button">More info</button>
               </div>
@@ -180,8 +180,8 @@ export default function Homecomponent() {
             <a href="" data-aos="fade-up" data-aos-duration="3000">
               <div className="card">
                 <div className="card-details">
-                  <p className="text-title">Graphic <br /> Design</p>
-                  <p className="text-bodyy">I build website go live with Html, Css, Javascript Bootstrap, WordPress</p>
+                  <p className="text-title">Graphic  Design</p>
+                  <p className="text-bodyy">I craft visually compelling designs that enhance brand identity, using creativity and precision to deliver impactful graphic design solutions</p>
                 </div>
                 <button className="card-button">More info</button>
               </div>
@@ -445,6 +445,38 @@ export default function Homecomponent() {
                     <div className="content">
                       <div className="grid">
                         <figure className="effect-lily">
+                          <img src="/img/projects/09.svg" alt="Hirize" />
+                          <figcaption>
+                            <div>
+                              <h2>Hirize Developers<span></span></h2>
+                              <p>Lily likes to play with crayons and pencils</p>
+                            </div>
+                            <a href="https://www.hirizedevelopers.com/" title="Hirize" target="_blank">View more</a>
+                          </figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="content">
+                      <div className="grid">
+                        <figure className="effect-lily">
+                          <img src="/img/projects/10.svg" alt="Soma Srikanth" />
+                          <figcaption>
+                            <div>
+                              <h2>Soma Srikanth<span></span></h2>
+                              <p>Lily likes to play with crayons and pencils</p>
+                            </div>
+                            <a href="https://srikanthsomaoncology.com/" title="Soma Srikanth" target="_blank">View more</a>
+                          </figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="content">
+                      <div className="grid">
+                        <figure className="effect-lily">
                           <img src="/img/projects/05.svg" alt="The Vue Residencies" />
                           <figcaption>
                             <div>
@@ -461,6 +493,22 @@ export default function Homecomponent() {
                     <div className="content">
                       <div className="grid">
                         <figure className="effect-lily">
+                          <img src="/img/projects/04.svg" alt="Dr Dikshith " />
+                          <figcaption>
+                            <div>
+                              <h2>Dr Dikshith <span></span></h2>
+                              <p>Lily likes to play with crayons and pencils</p>
+                            </div>
+                            <a href="https://drdikshithortho.com/" title="Dr Dikshith" target="_blank">View more</a>
+                          </figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="content">
+                      <div className="grid">
+                        <figure className="effect-lily">
                           <img src="/img/projects/02.svg" alt="Celequa" />
                           <figcaption>
                             <div>
@@ -468,6 +516,22 @@ export default function Homecomponent() {
                               <p>Lily likes to play with crayons and pencils</p>
                             </div>
                             <a href="https://celequa.com/" title="Celequa Tech" target="_blank">View more</a>
+                          </figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className="content">
+                      <div className="grid">
+                        <figure className="effect-lily">
+                          <img src="/img/projects/03.svg" alt="Jatothu Hussain" />
+                          <figcaption>
+                            <div>
+                              <h2>Jatothu Hussain Nayak <span></span></h2>
+                              <p>Lily likes to play with crayons and pencils</p>
+                            </div>
+                            <a href="https://jatothuhussainnayak.com/" title="Jatothu Hussain" target="_blank">View more</a>
                           </figcaption>
                         </figure>
                       </div>

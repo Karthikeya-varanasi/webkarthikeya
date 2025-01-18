@@ -35,8 +35,8 @@ a {
 }
 :root {
   --primary-color: #232f5d;
-  /* --secondary-color: #0c79be; */
-  --secondary-color: #8dab0a;
+  --secondary-color: #0c79be;
+  /* --secondary-color: #8dab0a; */
   --thrd-color: #ffffff;
   --black: #000!important;
   --white: #fff;
@@ -44,8 +44,8 @@ a {
   --text-primary-color: #ffffff;
   --text-second-color: #444444;
   --text: #c6c6c6;
-  /* --back-ground-primary-color: #232f5d; */
-  --back-ground-primary-color: #8dab0a;
+  --back-ground-primary-color: #232f5d;
+  /* --back-ground-primary-color: #8dab0a; */
   --back-ground-third-color: #000;
   --primary-fonts: "Syne", Sans-serif;
   --secondary-font: "Plus Jakarta Sans", sans-serif;

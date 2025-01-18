@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Web Designer & Developer - Portfolio| Karthikeya Varanasi",
-  description: "Looking for the best web developer near you? With over 3 years of professional experience, I create exceptional websites, optimize navigation flows, and deliver industrial-standard designs. From e-commerce sites to customer support portals and charity platforms, my work is recognized for innovation, efficiency, and smooth user experiences. Trusted by businesses in Hyderabad and beyond for top-notch web development and creative branding solutions.",
+  description: "Professional web developer with 3+ years of experience in creating innovative websites, e-commerce sites, and customer portals. Trusted by businesses in Hyderabad and beyond for exceptional designs and user experiences.",
 };
 
 
@@ -30,8 +30,10 @@ export default function RootLayout({ children }) {
         <meta name="description" content={metadata.description} />
         <meta name="keywords" content={metadata.keywords} />
         <meta name="author" content="Karthikeya Varanasi" />
+        <link rel="icon" type="image/png" href="/img/faviicon.png" />
+<link rel="apple-touch-icon" href="/img/faviicon.png" />
 
-        <link rel="icon" type="image/png"  href="../../public/img/faviicon.png" />
+
         {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="app" />
         <meta name="twitter:site" content="@Karthikeya Varanasi" />
